@@ -1,0 +1,101 @@
+/* 전체 앱 컨테이너 */
+.app {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* 헤더 스타일 */
+.app h1 {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 채팅 창 스타일 */
+.chat-container {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  height: 400px;
+  overflow-y: scroll;
+  background: white;
+}
+
+/* 메시지 스타일 */
+.message {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.message.user {
+  align-items: flex-end;
+}
+
+.message.bot {
+  align-items: flex-start;
+}
+
+.message .content {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.message.user .content {
+  background: #007bff;
+  color: white;
+  text-align: right;
+  border-bottom-right-radius: 0;
+}
+
+.message.bot .content {
+  background: #f1f1f1;
+  color: #333;
+  text-align: left;
+  border-bottom-left-radius: 0;
+}
+
+/* 입력 영역 */
+.input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-container button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-container button:hover {
+  background: #0056b3;
+}
